@@ -1,9 +1,8 @@
 #root {
-  max-width: 100%;
+  padding: 0;
   margin: 0;
-  padding: 2rem;
-  padding-top: 80px;
-  text-align: center;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -49,11 +48,12 @@
     right: 0;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
     display: flex;
     justify-content: center;
 }
 
-.nav-content {
+/* .nav-content {
     width: 100%;
     max-width: 1200px;
     display: flex;
@@ -61,23 +61,71 @@
     align-items: center;
     padding: 1rem;
     position: relative;
-}
+} */
 
 .nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+  
 }
 
 .cart-widget {
-    position: absolute;
-    right: 20px;
-    z-index: 1000;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
 }
 
-/* Estilo para el mensaje de bienvenida */
-.itemListContainer {
-    margin-top: 100px;
+.store-title {
     text-align: center;
+    margin-bottom: 1rem;
+}
+/* 
+.itemListContainer {
+    margin-top: 80px;
+    text-align: center;
+} */
+
+.main-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    margin-top: 100px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    margin: 0 auto 2rem auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100vw;
+}
+
+.welcome-container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-container h2 {
+    font-size: 2rem;
+    color: #34495e;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
 }

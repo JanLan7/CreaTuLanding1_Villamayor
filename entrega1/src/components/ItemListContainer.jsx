@@ -1,18 +1,11 @@
 import React from "react";
-import CartWidget from "./CartWidget"
 
-const NavBar = ()=>{
+const ItemListContainer = ({ mensaje }) => {
     return (
-        <nav>
-            <h1>Mi tienda</h1>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <CartWidget/>
-        </nav>
+      <div className="welcome-container">
+        <h2>{mensaje}</h2>
+      </div>
     );
 };
 
-export default NavBar;
+export default ItemListContainer;

@@ -7,8 +7,10 @@ const App = ()=>{
   return (
     <>
       <NavBar/>
-      <ItemListContainer mensaje="Bienvenidos a nuestra tienda online!" />
-      
+      <div className="main-content">
+        <h1 className="main-title">Tienda Online</h1>
+        <ItemListContainer mensaje="Bienvenidos a nuestra tienda online!" />
+      </div>
     </>
   )
 }
